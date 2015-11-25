@@ -3,10 +3,13 @@
 <head>
     <title>Js Champ</title>
 
+    <link rel="stylesheet" href="style/main.css"/>
+    
     <script language="javascript" type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="scripts/supportLib.js"></script>
     <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
-    <link rel="stylesheet" href="style/main.css"/>
+    <script src="scripts/ace/ace.js"></script>
+
 </head>
 <body>
 
@@ -21,15 +24,16 @@
     </div>
     
 	<div class="main">
-		<div id="jsInputPane" class="devPane">
-            <textarea id="jsInput">
+        <div id="jsInputPane" class="devPane">
+           
+            <div id="editor">
 // Example
 
 for(var x = 1; x <= 10; x++)
 {
     WriteLine(x);
 
-    if(x%2==0)
+    if(x % 2 == 0)
     {
         Write(" é par");
     }
@@ -38,7 +42,7 @@ for(var x = 1; x <= 10; x++)
         Write(" é impar");
     }
 }
-            </textarea>
+            </div>
         </div>
         <div id="consoleOutputPane" class="devPane">
             <textarea id="consoleOutput" disabled></textarea>
