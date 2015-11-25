@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>Js Champ</title>
+
+    <script language="javascript" type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/supportLib.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/main.js"></script>
+    <link rel="stylesheet" href="style/main.css"/>
+</head>
+<body>
+
+    <div class="header">
+		<h1>Js Champ</h1>
+	</div>
+
+    <div id="toolbar">
+        <div id="runButtonContainer">
+            <input id="runButton" type="button" value="Run" onClick="Execute()"/>
+        </div>
+    </div>
+    
+	<div class="main">
+		<div id="jsInputPane" class="devPane">
+            <textarea id="jsInput">
+// Example
+
+for(var x = 1; x <= 10; x++)
+{
+    WriteLine(x);
+
+    if(x%2==0)
+    {
+        Write(" é par");
+    }
+    else
+    {
+        Write(" é impar");
+    }
+}
+            </textarea>
+        </div>
+        <div id="consoleOutputPane" class="devPane">
+            <textarea id="consoleOutput" disabled></textarea>
+        </div>
+	</div>
+
+	<div class="footer">
+		
+	</div>
+
+</body>
+</html>
